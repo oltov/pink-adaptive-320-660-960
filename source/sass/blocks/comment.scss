@@ -1,0 +1,130 @@
+.comment__wrapper:nth-child(2),
+.comment__wrapper:nth-child(3),
+.comment__name {
+  display: none;
+}
+
+.comment__check {
+  margin: auto 0;
+  width: 6px;
+  height: 6px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+}
+
+.comment__check-one {
+  border: 3px solid #000000;
+  background-color: #ffffff;
+}
+
+.comment__wrapper {
+  margin: 0 20px;
+  padding-bottom: 15px;
+  padding-top: 35px;
+}
+
+.comment__wrapper-input {
+  display: flex;
+  justify-content: space-around;
+  width: 62px;
+  margin: 0 auto;
+}
+
+.comment__title {
+  @include font18;
+}
+
+.comment__paragraph {
+  @include font14;
+  padding: 0 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .comment__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 35px;
+  }
+
+  .comment__paragraph {
+    font-size: 18px;
+  }
+
+  .comment__title {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .comment__name {
+    @include font14;
+    display: block;
+    margin: 0;
+  }
+}
+
+/*@media (min-width: $tablet-width) {
+
+}*/
+
+@media (min-width: $desktop-width) {
+  .comment {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+  }
+
+  .comment__title {
+    margin-top: 20px;
+  }
+
+  .comment__wrapper-input {
+    display: none;
+  }
+
+  .comment__wrapper-all {
+    margin: 0 10px;
+    padding: 0 125px;
+    padding-top: 140px;
+  }
+
+  .comment__wrapper {
+    margin: 0;
+  }
+
+  .comment__wrapper-all::before {
+    content: "";
+    width: 82px;
+    height: 65px;
+    left: 434px;
+    top: 72px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.1;
+  }
+
+  .comment__wrapper::before {
+    content: "";
+    width: 25px;
+    height: 45px;
+    left: 10px;
+    top: 220px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    position: absolute;
+  }
+
+  .comment__wrapper::after {
+    content: "";
+    width: 25px;
+    height: 45px;
+    right: 10px;
+    top: 220px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    position: absolute;
+  }
+}

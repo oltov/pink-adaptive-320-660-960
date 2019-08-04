@@ -1,0 +1,41 @@
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 320px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .container--mobile {
+    margin: 0 auto;
+    text-align: center;
+    width: 320px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 660px;
+  }
+
+  .container--tablet-desktop {
+    margin: 0 auto;
+    text-align: center;
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 960px;
+  }
+
+  .container--tablet-desktop {
+    width: 960px;
+  }
+
+  .container--desktop {
+    margin: 0 auto;
+    text-align: center;
+    width: 940px;
+  }
+}
