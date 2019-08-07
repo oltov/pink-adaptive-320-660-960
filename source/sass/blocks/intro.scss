@@ -1,8 +1,10 @@
 .intro__wrapper-list {
+  width: 320px;
+  margin: 0 auto;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: left 110px;
-  padding-top: 396px;
+  // padding-top: 395px;
 }
 
 .intro__list-wrapper {
@@ -17,7 +19,9 @@
 }
 
 .listen-nav--closed .intro__wrapper-list {
-  margin-top: -66px;
+  margin-top: -67px;
+  background-position: left 175px;
+  // padding-top: 462px;
 }
 
 .listen-nav--closed .intro__links {
@@ -28,14 +32,16 @@
   background: $color-background;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  // background-size: cover;
-  background-position-y: -66px;
+  background-size: contain;
+    background-position-y: -66px;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .intro__links {
     background: url("../img/bg-back-mobile@2x.jpg") no-repeat;
-    background-size: 320px auto;
+    background-size: contain;
+    background-position-y: -66px;
+
   }
 }
 
@@ -92,10 +98,24 @@
 }
 
 .intro__banner {
-  display: none;
-  width: 150px;
+  // padding: 0;
+  padding-top: 20px;
+  padding-bottom: 310px;
+  width: 250px;
+  text-align: center;
   color: $color-logo;
   font-weight: $font-light;
+  // position: absolute;
+  // top: 355px;
+  // left: 35px;
+}
+
+.listen-nav--closed .intro__banner {
+  padding-top: 86px;
+}
+
+.listen-nav--closed .intro__banner {
+  top: 85px;
 }
 
 .intro__market {

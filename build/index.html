@@ -11,7 +11,7 @@
     <header class="header container">
       <div class="header__wrapper-color-desktop">
         <div class="header__wrapper-menu container">
-          <div class="header__wrapper-color">
+          <div class="header__wrapper-color container--mobile">
             <div class="header__wrapper">
               <a class="header__logo">
                   <picture>
@@ -21,9 +21,11 @@
                     </picture>
               </a>
             </div>
+            <button class="nav__toggle" type="button"></button>
+
           </div>
           <nav class="nav nav--closed nav--nojs">
-            <button class="nav__toggle" type="button"></button>
+            <!-- <button class="nav__toggle" type="button"></button> -->
             <div class="nav__wrapper-list">
               <ul class="nav__list site-list">
                 <li class="nav__item nav__item--active">
@@ -36,11 +38,12 @@
                   <a class="nav__link" href="form.html">Конкурс</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Acadymy</a>
+                  <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
                 </li>
               </ul>
             </div>
           </nav>
+
         </div>
       </div>
     </header>
@@ -48,9 +51,12 @@
     <main>
       <h1 class="visually-hidden">Прочитайте про наше приложение</h1>
       <section class="intro__links container">
+
           <div class="intro__wrapper-list">
-            <h2 class="intro__banner">Взгляните на жизнь иначе!</h2>
-            <div class="intro__list-wrapper">
+            <h2 class="intro__banner container--mobile">Взгляните на жизнь иначе!</h2>
+          </div>
+
+          <div class="intro__list-wrapper">
               <ul class="intro__list">
                 <li class="intro__item">
                   <a class="intro__market" href="#">Скачать приложение</a>
@@ -70,8 +76,8 @@
                   Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
                 </p>
               </div>
-            </div>
-        </div>
+          </div>
+
       </section>
 
       <section class="information container">
