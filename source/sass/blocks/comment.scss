@@ -1,0 +1,157 @@
+.comment__wrapper:nth-child(2),
+.comment__wrapper:nth-child(3),
+.comment__name {
+  display: none;
+}
+
+.comment__check {
+  margin: auto 0;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  cursor: pointer;
+}
+
+.comment__check:hover {
+  background-color: #7e868f;
+}
+
+.comment__check-one {
+  border: 3px solid #000000;
+  background-color: #ffffff;
+}
+
+.comment__wrapper {
+  padding-bottom: 15px;
+  padding-top: 21px;
+}
+
+.comment__wrapper-input {
+  display: flex;
+  justify-content: space-between;
+  width: 62px;
+  margin: 18px auto 43px;
+}
+
+.comment__title {
+  @include font18;
+  margin: 0;
+  padding: 21px 0;
+  padding-bottom: 13px;
+}
+
+.comment__paragraph {
+  @include font14;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .comment__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 35px;
+    padding-top: 28px;
+  }
+
+  .comment__wrapper-input {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .comment__paragraph {
+    font-size: 18px;
+  }
+
+  .comment__title {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 14px;
+    padding-bottom: 2px;
+  }
+
+  .comment__name {
+    @include font14;
+    display: block;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+  }
+
+  .comment__paragraph {
+    padding: 0;
+  }
+
+  .comment__title {
+    margin-top: 15px;
+    font-size: 24px;
+  }
+
+  .comment__name {
+    font-size: 18px;
+  }
+
+  .comment__wrapper-input {
+    display: none;
+  }
+
+  .comment__wrapper-all {
+    padding: 0 125px;
+    padding-top: 157px;
+  }
+
+  .comment__wrapper {
+    margin: 0;
+    padding-bottom: 45px;
+  }
+
+  .comment__wrapper-all::before {
+    content: "";
+    width: 82px;
+    height: 65px;
+    left: 434px;
+    top: 72px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.1;
+  }
+
+  .comment__wrapper::before {
+    content: "";
+    width: 25px;
+    height: 45px;
+    left: 10px;
+    top: 220px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    position: absolute;
+  }
+
+  .comment__wrapper::after {
+    content: "";
+    width: 25px;
+    height: 45px;
+    right: 10px;
+    top: 220px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    position: absolute;
+  }
+
+  .comment__wrapper::before:hover,
+  .comment__wrapper::after:hover {
+    opacity: 0.7;
+  }
+}

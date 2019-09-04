@@ -1,0 +1,36 @@
+.paragraph {
+  padding: 20px 0;
+  padding-bottom: 42px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.paragraph__title-one {
+  margin: 0;
+}
+
+.paragraph__title-two {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .paragraph {
+    @include font18-regular;
+    padding: 45px 0 69px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .paragraph {
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 66px;
+  }
+
+  .paragraph__title-one,
+  .paragraph__title-two {
+    @include font18-regular;
+    padding: 0 255px;
+  }
+}

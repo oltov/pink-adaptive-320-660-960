@@ -1,0 +1,16 @@
+.picture {
+  display: block;
+  height: 137px;
+}
+
+@media (min-width: $tablet-width) {
+  .picture {
+    height: 510px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .picture {
+    height: 506px;
+  }
+}
