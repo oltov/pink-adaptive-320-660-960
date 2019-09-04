@@ -5,14 +5,15 @@
 
 .editor__filter-wrapper {
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-top: 37px;
+  padding-bottom: 34px;
   width: 280px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .editor__item-wrapper {
-  width: 90px;
+  width: 44px;
 }
 
 input.editor__check {
@@ -23,24 +24,24 @@ input.editor__check {
   appearance: none;
   display: none;
   outline: none;
-  width: 200px;
+  width: 240px;
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 34px;
   margin-bottom: 0;
   height: 2px;
   background-color: #000000;
 }
 
 .editor__range-size {
-  margin-left: 40px;
+  margin-left: -17px;
 }
 
 .editor__range-fill {
-  margin-left: -53px;
+  margin-left: -98px;
 }
 
 .editor__range-bright {
-  margin-left: -146px;
+  margin-left: -179px;
 }
 
 .editor__range::-webkit-slider-thumb {
@@ -60,32 +61,31 @@ input.editor__check {
 
 .editor__filter {
   display: inline-block;
-  margin: 0 20px;
-  margin-top: 35px;
   padding: 0;
-  width: 45px;
-  height: 45px;
+  width: 48px;
+  height: 44px;
 }
 
 .editor__size {
   background-image: url("../img/icon-editor-crop-2.svg");
   background-repeat: no-repeat;
-  opacity: 0.7;
+  background-position: -1px -2px;
+  opacity: 0.9;
   cursor: pointer;
 }
 
 .editor__fill {
   background-image: url("../img/icon-editor-fill-2.svg");
   background-repeat: no-repeat;
-  opacity: 0.7;
+  opacity: 0.9;
   cursor: pointer;
 }
 
 .editor__bright {
   background-image: url("../img/icon-editor-contrast-2.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.7;
+  background-position: 5px center;
+  opacity: 0.9;
   cursor: pointer;
 }
 
@@ -121,7 +121,7 @@ input.editor__check {
 }
 
 .editor__button-wrapper {
-  padding: 38px 0;
+  padding: 38px 0 41px;
   border-top: 1px solid #dddfe0;
 }
 
@@ -131,7 +131,8 @@ input.editor__check {
   width: 280px;
   border: 3px solid $color-text-pink;
   border-radius: 50px;
-  padding: 12px 88px;
+  padding: 15px 88px;
+  padding-bottom: 16px;
   background-color: #f2f2f2;
   color: $color-text-pink;
   font-size: 18px;
@@ -171,31 +172,35 @@ input.editor__check {
 @media (min-width: $tablet-width) {
   .editor__button-wrapper {
     border-top: none;
+    padding-top: 66px;
   }
 
   .editor__button {
-    padding: 14px 88px;
+    margin-left: 27px;
+    margin-right: 12px;
+    width: auto;
+    padding: 14px 80px 17px 75px;
   }
 
   .editor__button-cancel {
-    margin-top: 25px;
+    margin-top: 24px;
+    padding: 14px 94px 17px 88px;
   }
 
   .editor__wrapper {
-    padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
     width: 620px;
   }
 
   .editor__wrapper-filter-button {
-    margin-left: auto;
+    margin-left: 20px;
   }
 
   .editor__photo {
     margin: 0;
-    padding-top: 58px;
-    padding-bottom: 55px;
+    padding-top: 57px;
+    padding-bottom: 54px;
   }
 
   .editor {
@@ -204,27 +209,35 @@ input.editor__check {
 
   .editor__filter-wrapper {
     margin: 0;
-    padding-top: 45px;
+    margin-left: 25px;
+    padding-top: 41px;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: auto;
   }
 
   .editor__range {
     display: block;
+    width: 202px;
   }
 
   .editor__range-size,
-  .editor__range-fill,
-  .editor__range-bright {
+  .editor__range-fill {
     margin: 0;
     margin-top: 35px;
+  }
+
+  .editor__range-bright {
+    margin: 0;
+    margin-top: 34px;
   }
 
   .editor__item-wrapper {
     width: auto;
     display: flex;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
     border-bottom: 1px solid #dddfe0;
   }
 
@@ -232,20 +245,27 @@ input.editor__check {
     margin: 0;
     margin-top: 25px;
     margin-right: 30px;
-    width: 22px;
-    height: 22px;
+    width: 25px;
+    height: 23px;
   }
 
   .editor__size {
-    background-size: 22px;
+    background-size: 24px;
+    background-position: 2px -1px;
   }
 
   .editor__fill {
-    background-size: 24px 22px;
+    background-size: 26px 24px;
+    background-position: 2px 2px;
   }
 
   .editor__bright {
     background-size: 16px;
+    background-position: 8px 2px;
+  }
+
+  .editor__picture {
+    height: 511px;
   }
 }
 
@@ -258,54 +278,61 @@ input.editor__check {
   }
 
   .editor__wrapper {
-    margin: 0 10px;
+    padding: 0;
     flex-wrap: nowrap;
     width: 940px;
     background-color: #f2f2f2;
   }
 
   .editor__wrapper-filter-button {
-    margin-left: 91px;
+    width: 410px;
+    margin-left: 90px;
   }
 
   .editor__filter-wrapper {
+    margin: 0;
     width: auto;
-    padding-top: 55px;
+    padding-top: 53px;
   }
 
   .editor__item-wrapper {
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 13px;
+    padding-bottom: 11px;
   }
 
   .editor__item-wrapper:nth-child(1) {
     padding-top: 0;
+    padding-bottom: 11px;
   }
 
   .editor__filter {
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
     margin-top: 0;
-    margin-right: 47px;
+    margin-right: 44px;
     margin-left: 0;
   }
 
   .editor__range {
-    width: 290px;
+    width: 288px;
     margin: auto 0;
     margin-right: 30px;
   }
 
   .editor__size {
-    background-size: 44px;
+    background-size: 48px;
+    background-position: -2px;
   }
 
   .editor__fill {
-    background-size: 48px 43px;
+    background-size: 48px 50px;
+    background-position: 0 1px;
   }
 
   .editor__bright {
-    background-size: 33px 33px;
+    margin-top: -7px;
+    background-size: 32px;
+    background-position: 6px 12px;
   }
 
   .editor__photo {
@@ -315,16 +342,17 @@ input.editor__check {
   .editor__button-wrapper {
     display: flex;
     justify-content: space-between;
-    padding-top: 115px;
+    padding-top: 150px;
+    padding-bottom: 57px;
   }
 
   .editor__button {
     margin: 0;
-    padding: 15px 39px;
+    padding: 14px 36px 17px 42px;
     width: auto;
   }
 
   .editor__button-cancel {
-    padding: 15px 52px;
+    padding: 14px 49px 16px 54px;
   }
 }

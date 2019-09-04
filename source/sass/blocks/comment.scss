@@ -6,10 +6,17 @@
 
 .comment__check {
   margin: auto 0;
+  padding: 0;
   width: 6px;
   height: 6px;
   background-color: #bec2c7;
   border-radius: 50%;
+  border: 3px solid #ffffff;
+  cursor: pointer;
+}
+
+.comment__check:hover {
+  background-color: #7e868f;
 }
 
 .comment__check-one {
@@ -18,25 +25,28 @@
 }
 
 .comment__wrapper {
-  margin: 0 20px;
   padding-bottom: 15px;
-  padding-top: 35px;
+  padding-top: 21px;
 }
 
 .comment__wrapper-input {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 62px;
-  margin: 0 auto;
+  margin: 18px auto 43px;
 }
 
 .comment__title {
   @include font18;
+  margin: 0;
+  padding: 21px 0;
+  padding-bottom: 13px;
 }
 
 .comment__paragraph {
   @include font14;
-  padding: 0 5px;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -44,6 +54,12 @@
     display: flex;
     flex-direction: column-reverse;
     padding-bottom: 35px;
+    padding-top: 28px;
+  }
+
+  .comment__wrapper-input {
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 
   .comment__paragraph {
@@ -53,7 +69,8 @@
   .comment__title {
     font-size: 20px;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 14px;
+    padding-bottom: 2px;
   }
 
   .comment__name {
@@ -63,10 +80,6 @@
   }
 }
 
-/*@media (min-width: $tablet-width) {
-
-}*/
-
 @media (min-width: $desktop-width) {
   .comment {
     margin: 0 auto;
@@ -74,8 +87,17 @@
     position: relative;
   }
 
+  .comment__paragraph {
+    padding: 0;
+  }
+
   .comment__title {
-    margin-top: 20px;
+    margin-top: 15px;
+    font-size: 24px;
+  }
+
+  .comment__name {
+    font-size: 18px;
   }
 
   .comment__wrapper-input {
@@ -83,13 +105,13 @@
   }
 
   .comment__wrapper-all {
-    margin: 0 10px;
     padding: 0 125px;
-    padding-top: 140px;
+    padding-top: 157px;
   }
 
   .comment__wrapper {
     margin: 0;
+    padding-bottom: 45px;
   }
 
   .comment__wrapper-all::before {
@@ -126,5 +148,10 @@
     background-repeat: no-repeat;
     opacity: 0.3;
     position: absolute;
+  }
+
+  .comment__wrapper::before:hover,
+  .comment__wrapper::after:hover {
+    opacity: 0.7;
   }
 }

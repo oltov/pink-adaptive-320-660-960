@@ -8,28 +8,26 @@
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="listen-nav without-footer">
-    <header class="header container">
-      <div class="header__wrapper-color-desktop">
-        <div class="header__wrapper-menu container">
-          <div class="header__wrapper-color container--mobile">
+    <header class="header">
+      <div class="header__wrapper-color--desktop">
+        <div class="header__wrapper-menu">
+          <div class="header__wrapper-color container">
             <div class="header__wrapper">
               <a class="header__logo">
                   <picture>
                       <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg 1x">
                       <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg 1x">
-                      <img src="img/logo-pink-white-mobile.svg" srcset="../img/logo-pink-white-mobile.svg alt="логотип приложения">
+                      <img src="img/logo-pink-white-mobile.svg" srcset="../img/logo-pink-white-mobile.svg" alt="логотип приложения">
                     </picture>
               </a>
             </div>
-            <button class="nav__toggle" type="button"></button>
-
+            <button class="nav__toggle nav__toggle--closed" type="button"></button>
           </div>
           <nav class="nav nav--closed nav--nojs">
-            <!-- <button class="nav__toggle" type="button"></button> -->
             <div class="nav__wrapper-list">
               <ul class="nav__list site-list">
                 <li class="nav__item nav__item--active">
-                  <a class="nav__link">Главная</a>
+                  <a class="nav__link" href="#">Главная</a>
                 </li>
                 <li class="nav__item">
                   <a class="nav__link" href="photo.html">Фотографии</a>
@@ -50,16 +48,16 @@
 
     <main>
       <h1 class="visually-hidden">Прочитайте про наше приложение</h1>
-      <section class="intro__links container">
+      <section class="intro__links">
 
-          <div class="intro__wrapper-list">
-            <h2 class="intro__banner container--mobile">Взгляните на жизнь иначе!</h2>
+          <div class="intro__wrapper-list container">
+            <h2 class="intro__banner container">Взгляните на жизнь иначе!</h2>
           </div>
 
           <div class="intro__list-wrapper">
               <ul class="intro__list">
                 <li class="intro__item">
-                  <a class="intro__market" href="#">Скачать приложение</a>
+                  <a class="intro__market intro__market--application" href="#">Скачать приложение</a>
                 </li>
                 <li class="intro__item">
                   <a class="intro__market intro__logo-apple" href="#"></a>
@@ -71,7 +69,7 @@
                   <a class="intro__market intro__logo-winows" href="#"></a>
                 </li>
               </ul>
-              <div class="container--mobile">
+              <div class="container intro__platforms--desktop">
                 <p class="intro__platforms">
                   Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
                 </p>
@@ -80,13 +78,15 @@
 
       </section>
 
-      <section class="information container">
-        <div class="information__banner">
-          <p class="information__rubric">Устали от серости мегаполиса?</p>
-          <p class="information__rubric">Нам есть, что вам предложить!</p>
+      <section class="information">
+        <div class="information__banner-wrapper">
+          <div class="information__banner container">
+            <p class="information__rubric">Устали от серости мегаполиса?</p>
+            <p class="information__rubric">Нам есть, что вам предложить!</p>
+          </div>
         </div>
         <div class="information__info">
-          <div class="information__wrapper">
+          <div class="information__wrapper container">
             <ul class="information__list">
               <li class="information__item">
                 <h3 class="information__title">Поднимает настроение</h3>
@@ -105,15 +105,15 @@
               </li>
             </ul>
           </div>
-          <div class="information__advantages-wrapper">
-              <div class="advantages__list">
-                <h2 class="advantages__title">Эффект на 24 часа!</h2>
-                <p class="advantages__news">Британские ученые провели исследования и доказали, что положительный эффект
-                  от использования приложения длится целые сутки!
-                </p>
-                <a class="advantages__more-news" href="#">Узнать больше об исследовании</a>
-              </div>
-          </div>
+
+        </div>
+        <div class="information__advantages-wrapper container">
+            <div class="advantages__list">
+              <h2 class="advantages__title"><span class="advantages__title--tablet">Эффект</span> на 24 часа!</h2>
+              <p class="advantages__news"><span class="advantages__news--desktop">Британские ученые провели исследования и доказали,</span> что положительный эффект от использования приложения длится целые сутки!
+              </p>
+              <a class="advantages__more-news" href="#">Узнать больше об исследовании</a>
+            </div>
         </div>
       </section>
       <section class="comment container">
@@ -144,8 +144,9 @@
           </div>
         </div>
       </section>
-      <section class="price container">
-        <div class="price__table-wrapper">
+      <section class="price">
+          <h2 class="visually-hidden">Выбор тарифа</h2>
+        <div class="container price__table-wrapper container--mobile">
           <input class="input1" type="radio" id="tarif1" name="tarif">
           <input class="input2" type="radio" id="tarif2" name="tarif" checked>
           <input class="input3" type="radio" id="tarif3" name="tarif">
@@ -156,7 +157,7 @@
                 <p class="price__tariff-name">БАЗА</p>
                 <p class="price__tariff-cost">1,99 USD</p>
               </td>
-              <td class="price__table-header">
+              <td class="price__table-header price__table-header--fone">
                   <p class="price__tariff-name price__tariff-hit">СТАНДАРТ</p>
                   <p class="price__tariff-cost">3,99 USD</p>
                 </td>
@@ -209,37 +210,41 @@
             </tr>
           </table>
           <div class="price__wrapper-input">
-            <label for="tarif1"><div class="price__check price__check--one"></div></label>
-            <label for="tarif2"><div class="price__check price__check--two"></div></label>
-            <label for="tarif3"><div class="price__check price__check--three"></div></label>
+            <label for="tarif1" class="price__check price__check--one"></label>
+            <label for="tarif2" class="price__check price__check--two"></label>
+            <label for="tarif3" class="price__check price__check--three"></label>
           </div>
         </div>
       </section>
       <section class="contacts container">
+          <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__title">Остались вопросы?
           Свяжитесь с нами!
         </p>
         <div class="contacts__wrapper">
           <p class="contacts__rubric">Звоните:</p>
-          <p class="contacts__info">+7(812)555-66-66</p>
+          <p class="contacts__info">+7 (812) 555-66-66</p>
         </div>
         <div class="contacts__wrapper">
           <p class="contacts__rubric">Пишите:</p>
-          <p class="contacts__info">mail@htmlacademy.ru</p>
+          <p class="contacts__info contacts__info--address"><a class="contacts__link" href="#">mail@htmlacademy.ru</a></p>
         </div>
         <div class="contacts__wrapper">
           <p class="contacts__rubric">Приезжайте в гости:</p>
           <p class="contacts__info contacts__adress">ул. Большая Конюшенная, 19/8</p>
         </div>
       </section>
-      <section class="contacts__map container">
-        <iframe class="contacts__map-one" src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD" width="1200" height="400" frameborder="1" allowfullscreen="true"></iframe>
+      <section class="contacts__map">
+          <h2 class="visually-hidden">Карта</h2>
+        <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A96642d5d06a0e789cc62be886ba331790f8f7ed2bec7bb991baa52b0ee8902d2&amp;source=constructor"  style="border:0; width:100%; height:100%"></iframe> -->
       </section>
-
     </main>
     <footer class="footer container">
       <div class="footer__wrapper">
-        <p class="footer__logo"></p>
+        <p class="footer__logo">
+          <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+
+        </p>
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">

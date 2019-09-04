@@ -1,5 +1,17 @@
+// .information {
+//   background-image: url("../img/bg-triangle-white.svg");
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   background-color: #f2f2f2;
+// }
+
 .information__banner {
+  padding-top: 16px;
   padding-bottom: 30px;
+  background-color: #ffffff;
+}
+
+.information__banner-wrapper {
   background-color: #ffffff;
 }
 
@@ -8,10 +20,10 @@
 }
 
 .information__item .information__item-fone {
-  padding-bottom: 320px;
+  padding-bottom: 318px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center 120px;
+  background-position: center 124px;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -29,9 +41,9 @@
 }
 
 .information__list {
-  margin: 0 20px;
+  margin: 0 10px;
   padding: 0;
-  padding-top: 80px;
+  padding-top: 78px;
   // background: url("../img/fone-shape-mobile.svg") no-repeat;
   // background-position-y: -40px;
   list-style: none;
@@ -39,12 +51,18 @@
 }
 
 .information__rubric {
-  margin: 0 auto;
-  padding: 0 30px;
-  padding-top: 40px;
+  // margin: 0 auto;
+  // padding: 0 30px;
+  // padding-top: 21px;
   font-size: 24px;
+  line-height: 29px;
   font-weight: $font-light;
   color: $color-text;
+}
+
+.information__rubric:nth-child(2) {
+  padding-top: 5px;
+  margin-bottom: 5px;
 }
 
 .information__title {
@@ -57,8 +75,8 @@
 .information__description {
   margin: 0;
   padding: 0;
-  padding-top: 10px;
-  padding-bottom: 28px;
+  padding-top: 12px;
+  padding-bottom: 31px;
   font-size: $font-size-text;
   line-height: $line-size;
 }
@@ -69,30 +87,39 @@
   }
 
   .information__advantages-wrapper {
-    padding: 90px 20px;
+    display: block;
+    padding: 96px 20px;
     background: url("../img/icon-timer-all.png") no-repeat;
-    background-position: 20px 50px;
+    background-position: 20px 60px;
   }
 
   .information__rubric {
     font-size: 40px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 11px;
+    // line-height: 67px;
   }
 
   .information__rubric:nth-child(2) {
     width: 340px;
+    margin: 0 auto;
     padding-top: 0;
+    line-height: 46px;
   }
 
   .information__list {
+    margin: 0;
+    padding-top: 74px;
     display: flex;
     flex-direction: column;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
     background-size: 268px auto;
     // background-position-x: 20px;
-    background-position-y: 0;
-    padding-left: 330px;
-    padding-right: 30px;
+    background-position-y: 4px;
+    padding-left: 308px;
+    padding-right: 3px;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -108,6 +135,7 @@
   // }
 
   .information__description {
+    padding: 13px 0 33px;
     text-align: left;
   }
 
@@ -116,27 +144,33 @@
   }
 
   .information__item .information__item-fone {
-    padding-bottom: 30px;
+    padding-bottom: 42px;
     background: none;
   }
 
   .information__banner {
-    padding-bottom: 50px;
+    padding-bottom: 38px;
+    padding-top: 54px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .information {
+    background-color: #f2f2f2;
+  }
+
   .information__advantages-wrapper {
     display: block;
-    padding: 90px 0;
-    // background-color: #f2f2f2;
-    background-position: 10px 50px;
+    padding: 113px 0;
+    padding-top: 117px;
+    background-position: 0 25px;
+    background-size: 300px 345px;
   }
 
   .information__info {
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% auto;
     background-position: center 0;
     background-color: #f2f2f2;
   }
@@ -149,17 +183,19 @@
   .information__rubric:nth-child(2) {
     width: auto;
     padding: 0 200px;
+    padding-top: 5px;
+    line-height: 60px;
   }
 
   .information__banner {
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding-top: 83px;
+    padding-bottom: 75px;
     text-align: center;
   }
 
   .information__wrapper {
-    padding: 0 10px;
+    // padding: 0 10px;
     // background-image: url("../img/bg-triangle-white.svg");
     // background-repeat: no-repeat;
     // background-size: contain;
@@ -168,7 +204,7 @@
 
   .information__list {
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     width: 940px;
     margin: 0 auto;
     padding: 0;
@@ -176,7 +212,7 @@
   }
 
   .information__description {
-    padding: 0 10px;
+    padding: 0 5px;
     padding-top: 25px;
     font-size: 18px;
     line-height: 30px;
@@ -184,7 +220,7 @@
   }
 
   .information__title {
-    margin-top: 350px; /*временное решение для наглядности макета*/
+    margin-top: 357px;
     padding: 0 10px;
     width: 230px;
     text-align: center;
@@ -195,6 +231,7 @@
 
   .information__item {
     width: 250px;
+    margin: 0 45px 0 25px;
   }
 
   .information__item:nth-child(1) {
