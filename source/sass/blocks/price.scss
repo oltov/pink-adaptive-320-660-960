@@ -94,7 +94,8 @@
   align-items: center;
 }
 
-.price__check {
+.price__check,
+.comment__check {
   margin: auto 0;
   width: 6px;
   height: 6px;
@@ -103,9 +104,16 @@
   border: 3px solid #f2f2f2;
 }
 
+.comment__check {
+  border: 3px solid #ffffff;
+}
+
 .input1:checked ~ .price__wrapper-input .price__check--one,
 .input2:checked ~ .price__wrapper-input .price__check--two,
-.input3:checked ~ .price__wrapper-input .price__check--three {
+.input3:checked ~ .price__wrapper-input .price__check--three,
+.input-comment1:checked ~ .comment__check--one,
+.input-comment2:checked ~ .comment__check--two,
+.input-comment3:checked ~ .comment__check--three {
   border: 3px solid #000000;
   background-color: #ffffff;
 }
@@ -141,7 +149,10 @@
 
 .input1,
 .input2,
-.input3 {
+.input3,
+.input-comment1,
+.input-comment2,
+.input-comment3 {
   display: none;
 }
 
