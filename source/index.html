@@ -4,11 +4,16 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="js/picturefill.js"></script>
     <link href="css/style.min.css" rel="stylesheet">
+    <script>
+        document.createElement("picture");
+      </script>
+      <script src="js/picturefill.js" async></script>
   </head>
   <body class="listen-nav without-footer">
     <header class="header">
-      <div class="header__wrapper-color--desktop">
+      <div class="header__wrapper-color header__wrapper-color--desktop">
         <div class="header__wrapper-menu">
           <div class="header__wrapper-color container">
             <div class="header__wrapper">
@@ -20,7 +25,7 @@
                 </picture>
               </a>
             </div>
-            <button class="nav__toggle nav__toggle--closed" type="button"></button>
+            <button class="header__toggle header__toggle--closed" type="button"></button>
           </div>
           <nav class="nav nav--closed nav--nojs">
             <div class="nav__wrapper-list">
@@ -148,7 +153,7 @@
       </section>
       <section class="price">
         <h2 class="visually-hidden">Выбор тарифа</h2>
-        <div class="container price__table-wrapper container--mobile">
+        <div class="container price__table-wrapper container__mobile">
           <input class="input1" type="radio" id="tarif1" name="tarif">
           <input class="input2" type="radio" id="tarif2" name="tarif" checked>
           <input class="input3" type="radio" id="tarif3" name="tarif">
@@ -173,13 +178,13 @@
                 <p class="price__function">Розовый фильтр</p>
               </td>
               <td class="price__table-string price__status-ok">
-                <p class="price__function--mobile">розовый фильтр</p>
+                <p class="price__function-mobile">розовый фильтр</p>
               </td>
               <td class="price__table-string price__status-ok">
-                <p class="price__function--mobile">розовый фильтр</p>
+                <p class="price__function-mobile">розовый фильтр</p>
               </td>
               <td class="price__table-string price__status-ok">
-                <p class="price__function--mobile">розовый фильтр</p>
+                <p class="price__function-mobile">розовый фильтр</p>
               </td>
             </tr>
             <tr>
@@ -187,13 +192,13 @@
                 <p class="price__function">Смайлики</p>
               </td>
               <td class="price__table-string price__status-no">
-                <p class="price__function--mobile">смайлики</p>
+                <p class="price__function-mobile">смайлики</p>
               </td>
               <td class="price__table-string price__status-ok">
-                <p class="price__function--mobile">смайлики</p>
+                <p class="price__function-mobile">смайлики</p>
               </td>
               <td class="price__table-string price__status-ok">
-                <p class="price__function--mobile">смайлики</p>
+                <p class="price__function-mobile">смайлики</p>
               </td>
             </tr>
             <tr>
@@ -201,13 +206,13 @@
                 <p class="price__function">Комментарии</p>
               </td>
               <td class="price__table-string price__status-no">
-                <p class="price__function--mobile">комментарии</p>
+                <p class="price__function-mobile">комментарии</p>
               </td>
               <td class="price__table-string price__status-no">
-                <p class="price__function--mobile">комментарии</p>
+                <p class="price__function-mobile">комментарии</p>
               </td>
               <td class="price__table-string price__status-ok">
-                <p class="price__function--mobile">комментарии</p>
+                <p class="price__function-mobile">комментарии</p>
               </td>
             </tr>
           </table>

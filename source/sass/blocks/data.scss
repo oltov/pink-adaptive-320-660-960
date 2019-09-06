@@ -169,7 +169,7 @@
   margin-bottom: 25px;
   padding: 0;
   border: none;
-  display: flex;
+  // display: flex;
 }
 
 .data__contact-wrapper {
@@ -189,6 +189,7 @@
 
 .data__contact-input {
   @include font18-regular;
+  min-height: 63px;
   font-family: "Open Sans", "Arial", sans-serif;
   box-sizing: border-box;
   margin: 5px 0 17px;
@@ -239,6 +240,12 @@
   left: 12px;
   border-radius: 50%;
   background-color: $color-text-pink;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .data__platform-radio:checked ~ .data__platform-name::after {
+    top: -7px;
+  }
 }
 
 .data__description {
@@ -396,6 +403,7 @@
   .data__progress-title,
   .data__description-title,
   .data__contact-title {
+    margin: 0 auto;
     padding: 0 24px;
     line-height: 30px;
   }

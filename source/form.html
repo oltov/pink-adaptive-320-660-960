@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="js/picturefill.js"></script>
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="listen-nav">
     <header class="header">
-      <div class="header__wrapper-color--desktop">
+      <div class="header__wrapper-color header__wrapper-color--desktop">
         <div class="header__wrapper-menu">
           <div class="header__wrapper-color container">
             <div class="header__wrapper">
@@ -20,7 +21,7 @@
                 </picture>
               </a>
             </div>
-            <button class="nav__toggle nav__toggle--closed" type="button"></button>
+            <button class="header__toggle header__toggle--closed" type="button"></button>
           </div>
           <nav class="nav nav--closed nav--nojs">
             <div class="nav__wrapper-list">
@@ -50,7 +51,7 @@
           <h2 class="form__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
         </div>
       </div>
-      <section class="data container--tablet-desktop">
+      <section class="data container__tablet-desktop">
         <h2 class="visually-hidden">Форма отправки фото</h2>
         <div class="data__paragraph-wrapper container">
           <p class="data__paragraph">
@@ -60,7 +61,7 @@
           </p>
         </div>
         <form class="data__input" action="/echo" method="POST">
-          <fieldset class="data__input-group container--mobile">
+          <fieldset class="data__input-group container__ mobile">
             <div class="data__input-wrapper">
               <label for="surname" class="data__name">ФАМИЛИЯ:</label>
               <input class="data__name-input" id="surname" type="text" placeholder="Укажите фамилию *">
@@ -71,7 +72,7 @@
             </div>
           </fieldset>
           <div class="data__progress-wrapper">
-            <fieldset class="data__progress container--mobile container">
+            <fieldset class="data__progress container__mobile container">
               <legend class="data__progress-title">Ваши безбашенные достижения в путешествии</legend>
               <ul class="data__progress-list">
                 <li class="data__progress-item">
@@ -101,7 +102,7 @@
               </ul>
             </fieldset>
           </div>
-          <fieldset class="data__contacts-all container--mobile">
+          <fieldset class="data__contacts-all container__mobile">
             <legend class="data__contact-title">Контактная информация</legend>
             <div class="data__contact-wrapper">
               <label for="tel" class="data__contact">номер телефона</label>
@@ -111,7 +112,7 @@
             </div>
           </fieldset>
           <div class="data__platform-wrapper">
-            <fieldset class="data__platform container--mobile">
+            <fieldset class="data__platform container__mobile">
               <legend class="data__platform-title">С каким приложением путешествовали?</legend>
               <ul class="data__platform-list">
                 <li class="data__platform-item">
@@ -129,11 +130,11 @@
               </ul>
             </fieldset>
           </div>
-          <fieldset class="data__description container--mobile">
+          <fieldset class="data__description container__mobile">
             <legend class="data__description-title">Опишите свои эмоции</legend>
             <textarea class="data__description-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <div class="data__send container--mobile">
+          <div class="data__send container__mobile">
             <button class="data__button" type="submit">Отправить форму</button>
             <p class="data__send-star">— обязательные <span class="data__send-star--desktop">для заполнения</span> поля</p>
           </div>
