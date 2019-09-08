@@ -20,19 +20,14 @@
   margin: 0 6px;
 }
 
-.social__item:nth-child(1) {
-  background: url("../img/icon-twitter.svg") no-repeat;
-  background-position: 18px;
+.social__img {
+  margin-top: 15px;
+  margin-left: 5px;
 }
 
-.social__item:nth-child(2) {
-  background: url("../img/icon-facebook.svg") no-repeat;
-  background-position: 22px 15px;
-}
-
-.social__item:nth-child(3) {
-  background: url("../img/icon-youtube.svg") no-repeat;
-  background-position: 21px 19px;
+.social__img-facebook {
+  margin-top: 13px;
+  margin-left: 2px;
 }
 
 .social__item:active {

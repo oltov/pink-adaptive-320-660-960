@@ -61,6 +61,9 @@
         <h2 class="visually-hidden">Топ фото</h2>
         <div class="photo__main-photo-wrapper">
           <picture class="picture">
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
             <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
             <img class="photo__main-photo" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.jpg 2x" alt="фото панорама">
@@ -70,7 +73,7 @@
             <p class="photo__text photo__text-top">Прыгать или нет? Напишите в коментарии свой совет и смотрите
               прямую трансляцию в перископе, задавайте свои вопросы!
             </p>
-            <button class="photo__button photo__button-top" type="button">нравится: 215</button>
+            <button class="photo__button photo__button-top" type="button" title="нравится">нравится: 215</button>
           </div>
         </div>
       </section>
@@ -78,63 +81,81 @@
         <ul class="photo__list">
           <li class="photo__item">
             <picture class="photo__picture">
-              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x" >
-              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x" >
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x" >
+              <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
               <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@1x.jpg 1x, img/photo-car-mobile@2x.jpg 2x" alt="фото автомобиль">
             </picture>
             <span class="photo__name">Левон <b class="photo__date">(5 часов назад)</b></span>
             <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <button class="photo__button" type="button">НРАВИТСЯ: 356</button>
+            <button class="photo__button" type="button" title="нравится">НРАВИТСЯ: 356</button>
           </li>
           <li class="photo__item">
             <picture class="photo__picture">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
               <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@1x.jpg 1x, img/photo-drumset-mobile@2x.jpg 2x" alt="фото барабаны">
             </picture>
             <span class="photo__name">Антон <b class="photo__date">(12 часов назад)</b></span>
             <p class="photo__text">Соседи будут рады!</p>
-            <button class="photo__button photo__button--item2" type="button">НРАВИТСЯ: 666</button>
+            <button class="photo__button photo__button--item2" type="button" title="нравится">НРАВИТСЯ: 666</button>
           </li>
           <li class="photo__item">
             <picture class="photo__picture">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
               <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@1x.jpg 1x, img/photo-window-mobile@2x.jpg 2x" alt="фото пользователя">
             </picture>
             <span class="photo__name">Борис <b class="photo__date">(20 часов назад)</b></span>
             <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <button class="photo__button photo__button--item3" type="button">НРАВИТСЯ: 215</button>
+            <button class="photo__button photo__button--item3" type="button" title="нравится">НРАВИТСЯ: 215</button>
           </li>
           <li class="photo__item">
             <picture class="photo__picture">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
               <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@1x.jpg 1x, img/photo-fair-mobile@2x.jpg 2x" alt="фото пользователя">
             </picture>
             <span class="photo__name">Сергей <b class="photo__date">(25 часов назад)</b></span>
             <p class="photo__text">Самая кубанская в мире!</p>
-            <button class="photo__button photo__button--item4" type="button">НРАВИТСЯ: 4</button>
+            <button class="photo__button photo__button--item4" type="button" title="нравится">НРАВИТСЯ: 4</button>
           </li>
           <li class="photo__item">
             <picture class="photo__picture">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
               <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@1x.jpg 1x, img/photo-pov-mobile@2x.jpg 2x" alt="фото пользователя">
             </picture>
             <span class="photo__name">Максим <b class="photo__date">(40 часов назад)</b></span>
             <p class="photo__text">Где снег-то?</p>
-            <button class="photo__button photo__button--item4" type="button">НРАВИТСЯ: 150</button>
+            <button class="photo__button photo__button--item4" type="button" title="нравится">НРАВИТСЯ: 150</button>
           </li>
           <li class="photo__item">
             <picture class="photo__picture">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
               <img  src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@1x.jpg 1x, img/photo-wing-mobile@2x.jpg 2x" alt="фото пользователя">
             </picture>
             <span class="photo__name">Надежда <b class="photo__date">(45 часов назад)</b></span>
             <p class="photo__text">Всем GM и взаимные лайки!</p>
-            <button class="photo__button photo__button--item4" type="button">НРАВИТСЯ: 2560</button>
+            <button class="photo__button photo__button--item4" type="button" title="нравится">НРАВИТСЯ: 2560</button>
           </li>
         </ul>
       </div>
@@ -146,6 +167,9 @@
         <h2 class="visually-hidden">Редактор фото</h2>
         <div class="editor__wrapper container">
           <picture class="editor__picture">
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
             <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
             <img class="editor__photo" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@1x.jpg 1x, img/photo-road-mobile@2x.jpg 2x" alt="обработка фото пользователя">
@@ -154,18 +178,18 @@
             <div class="editor__filter-wrapper">
               <div class="editor__item-wrapper">
                 <input class="editor__check editor__check-size" type="radio" id="one" checked name="editor">
-                <label for="one" class="editor__filter editor__size"></label>
-                <input class="editor__range editor__range-size" type="range">
+                <label for="one" class="editor__filter editor__size" tabindex="1" title="размер фото"></label>
+                <input class="editor__range editor__range-size" type="range" tabindex="1">
               </div>
               <div class="editor__item-wrapper">
                 <input class="editor__check editor__check-fill" type="radio" id="two" name="editor">
-                <label for="two" class="editor__filter editor__fill"></label>
-                <input class="editor__range editor__range-fill" type="range">
+                <label for="two" class="editor__filter editor__fill" tabindex="1" title="цветовой баланс"></label>
+                <input class="editor__range editor__range-fill" type="range" tabindex="1">
               </div>
               <div class="editor__item-wrapper">
                 <input class="editor__check editor__check-bright" type="radio" id="thre" name="editor">
-                <label for="thre" class="editor__filter editor__bright"></label>
-                <input class="editor__range editor__range-bright" type="range">
+                <label for="thre" class="editor__filter editor__bright" tabindex="1" title="яркость фото"></label>
+                <input class="editor__range editor__range-bright" type="range" tabindex="1">
               </div>
             </div>
             <div class="editor__button-wrapper">
@@ -178,17 +202,25 @@
     </main>
     <footer class="footer container footer--foto">
       <div class="footer__wrapper">
-        <p class="footer__logo"></p>
+        <p class="footer__logo">
+          <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" title="страница академии"></a>
+        </p>
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="https://twitter.com/htmlacademy_ru"></a>
+              <a class="social__link" href="https://twitter.com/htmlacademy_ru">
+                <img class="social__img" src="img/icon-twitter.svg" alt="твиттер академии">
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://www.facebook.com/htmlacademy"></a>
+              <a class="social__link" href="https://www.facebook.com/htmlacademy">
+                <img class="social__img social__img-facebook" src="img/icon-facebook.svg" alt="фэйсбук академии">
+              </a>
             </li>
             <li class="social__item">
-                <a class="social__link" href="https://www.youtube.com/user/htmlacademyru"></a>
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+                <img class="social__img" src="img/icon-youtube.svg" alt="ютуб академии">
+              </a>
             </li>
           </ul>
         </div>
