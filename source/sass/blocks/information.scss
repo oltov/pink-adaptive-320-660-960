@@ -1,10 +1,3 @@
-// .information {
-//   background-image: url("../img/bg-triangle-white.svg");
-//   background-repeat: no-repeat;
-//   background-size: contain;
-//   background-color: #f2f2f2;
-// }
-
 .information__banner {
   padding-top: 16px;
   padding-bottom: 30px;
@@ -44,16 +37,11 @@
   margin: 0 10px;
   padding: 0;
   padding-top: 78px;
-  // background: url("../img/fone-shape-mobile.svg") no-repeat;
-  // background-position-y: -40px;
   list-style: none;
   text-align: center;
 }
 
 .information__rubric {
-  // margin: 0 auto;
-  // padding: 0 30px;
-  // padding-top: 21px;
   font-size: 24px;
   line-height: 29px;
   font-weight: $font-light;
@@ -98,7 +86,6 @@
     padding: 0;
     margin: 0;
     padding-bottom: 11px;
-    // line-height: 67px;
   }
 
   .information__rubric:nth-child(2) {
@@ -116,7 +103,6 @@
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
     background-size: 268px auto;
-    // background-position-x: 20px;
     background-position-y: 4px;
     padding-left: 308px;
     padding-right: 3px;
@@ -128,11 +114,6 @@
       background-repeat: no-repeat;
     }
   }
-
-  // .information__wrapper {
-  //   background: url("../img/fone-shape-tablet.svg") no-repeat;
-  //   background-position-y: -20px;
-  // }
 
   .information__description {
     padding: 13px 0 33px;
@@ -194,17 +175,8 @@
     text-align: center;
   }
 
-  .information__wrapper {
-    // padding: 0 10px;
-    // background-image: url("../img/bg-triangle-white.svg");
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    // background-position: center 0;
-  }
-
   .information__list {
     flex-direction: row;
-    // justify-content: space-between;
     width: 940px;
     margin: 0 auto;
     padding: 0;

@@ -4,7 +4,6 @@
 
 .data__input-wrapper {
   text-align: left;
-  // padding: 0 20px;
 }
 
 .data__paragraph {
@@ -169,7 +168,6 @@
   margin-bottom: 25px;
   padding: 0;
   border: none;
-  // display: flex;
 }
 
 .data__contact-wrapper {
@@ -287,7 +285,6 @@
   text-transform: uppercase;
   display: block;
   margin: 0;
-  // margin-bottom: 35px;
   padding: 15px 46px;
   padding-bottom: 14px;
   border: 2px solid #2aab6d;
@@ -305,12 +302,16 @@
   color: #7abc98;
 }
 
+.data__button:disabled {
+  border-color: #e5e5e5;
+  background-color: #e5e5e5;
+}
+
 .data__send-star {
   @include font14;
   margin: 0;
   padding-top: 35px;
   padding-left: 10px;
-  // margin-right: 20px;
   position: relative;
   text-transform: uppercase;
 }

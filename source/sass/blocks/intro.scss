@@ -2,13 +2,6 @@
   background-color: #1d2631;
 }
 
-@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .intro__wrapper-list {
-    background-image: url("../img/iphone-hand-mobile@2x.png");
-    background-size: 258px auto;
-  }
-}
-
 .listen-nav--closed .intro__wrapper-list {
   margin-top: -66px;
   background-position: left 175px;
@@ -25,19 +18,15 @@
   background-size: auto, contain;
 }
 
-
-@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .intro__links {
-    background: url("../img/bg-back-mobile@2x.jpg") no-repeat;
-    background-size: contain;
-    background-position-y: -66px;
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .listen-nav--closed .intro__links {
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat center 176px, url("../img/bg-back-mobile@1x.jpg") no-repeat top $color-background;
   }
 }
 
 .intro__list {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-evenly;
   width: 281px;
   margin: 0 auto;
   padding: 0;
@@ -76,8 +65,6 @@
   padding-top: 30px;
   width: 47px;
   height: 57px;
-  background: url("../img/logo-apple.svg") no-repeat;
-  background-position-y: 30px;
 }
 
 .intro__logo-android {
@@ -85,9 +72,6 @@
   padding-top: 38px;
   width: 44px;
   height: 47px;
-  background-image: url("../img/logo-android.svg");
-  background-repeat: no-repeat;
-  background-position-y: 40px;
 }
 
 .intro__logo-winows {
@@ -95,9 +79,6 @@
   padding-top: 43px;
   width: 44px;
   height: 41px;
-  background-image: url("../img/logo-microsoft.svg");
-  background-repeat: no-repeat;
-  background-position-y: 43px;
 }
 
 .intro__banner {
@@ -172,13 +153,6 @@
     background-position: -30px 75px;
   }
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .intro__wrapper-list {
-      background-image: url("../img/iphone-hand-tablet@2x.png");
-      background-size: 700px auto;
-    }
-  }
-
   .intro__banner {
     margin: 0;
     padding: 0 0 30px 50px;
@@ -200,7 +174,6 @@
     padding: 0;
     margin: 0 auto;
     padding-right: 320px;
-    // display: flex;
     flex-direction: row;
     width: 300px;
     background-color: transparent;
@@ -230,12 +203,12 @@
   }
 
   .intro__logo-android {
-    margin-top: 13px;
+    margin-top: 15px;
     height: 50px;
   }
 
   .intro__logo-winows {
-    margin-top: 16px;
+    margin-top: 14px;
   }
 }
 
@@ -265,13 +238,6 @@
     background-position-x: 30px;
     background-position-y: 78px;
     text-align: center;
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .listen-nav--closed .intro__wrapper-list {
-      background-image: url("../img/iphone-hand-desktop@2x.png");
-      background-size: 1050px auto;
-    }
   }
 
   .intro__list {
