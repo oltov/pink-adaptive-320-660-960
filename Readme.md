@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Михаил Болтов](https://up.htmlacademy.ru/adaptive/17/user/830671).
-* Наставник: `Неизвестно`.
+* Студент: [Александр Александрович Келеберда](https://up.htmlacademy.ru/adaptive/17/user/830671).
+* Наставник: `Нахрен мне никто не нужен`.
 
 ---
 
