@@ -13,31 +13,33 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <nav class="main-header__nav">
-        <div class="main-header__logo">
-          <a class="main-header__logo-image" href="index.html">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg 1x">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg 1x">
-              <img src="img/logo-pink-white-mobile.svg" srcset="../img/logo-pink-white-mobile.svg"
-                alt="логотип приложения">
-            </picture>
-          </a>
+        <div class="main-header__nav-wrapper">
+          <div class="main-header__logo logo">
+            <a class="logo__image" href="index.html">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg 1x">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg 1x">
+                <img src="img/logo-pink-white-mobile.svg" srcset="../img/logo-pink-white-mobile.svg"
+                  alt="логотип приложения">
+              </picture>
+            </a>
+          </div>
+          <button class="main-header__toggle" type="button" title="Кнопка меню"></button>
+          <ul class="main-header__list">
+            <li class="main-header__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-header__item">
+              <a href="form.html">Фотографии</a>
+            </li>
+            <li class="main-header__item">
+              <a href="photo.html">Конкурс</a>
+            </li>
+            <li class="main-header__item">
+              <a href="htmlacademy.html">Html Academy</a>
+            </li>
+          </ul>
         </div>
-        <button class="main-header__toggle" type="button" title="Кнопка меню"></button>
-        <ul class="main-header__list">
-          <li class="main-header__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-header__item">
-            <a href="form.html">Фотографии</a>
-          </li>
-          <li class="main-header__item">
-            <a href="photo.html">Конкурс</a>
-          </li>
-          <li class="main-header__item">
-            <a href="htmlacademy.html">Html Academy</a>
-          </li>
-        </ul>
       </nav>
       <div class="main-header__store store">
         <!-- в мобильной версии display:none -->
@@ -48,19 +50,17 @@
         <ul class="store__list">
           <li class="store__item">
             <a href="#" class="store__link">
-              <svg width="46" height="57">
-                <use xlink:href="img/symbols.svg#logo-apple"></use>
-              </svg>
+              яблоко
             </a>
           </li>
           <li class="store__item">
             <a href="#" class="store__link">
-
+              андроид
             </a>
           </li>
           <li class="store__item">
             <a href="#" class="store__link">
-
+              майкрософт
             </a>
           </li>
         </ul>
@@ -113,11 +113,12 @@
         <div class="efficiency__description">
           <!-- только в table и desktop -->
           <h2 class="efficiency__title">Эффект на 24 часа!</h2>
-          <p class="efficiency__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+          <p class="efficiency__text">Британские ученые провели исследования и доказали, что положительный эффект от
+            использования приложения длится целые сутки!
           </p>
           <a href="#" class="efficiency__link">Узнать больше об исследовании</a>
         </div>
-      </div> 
+      </div>
     </section>
 
     <section class="feedback">
@@ -126,28 +127,34 @@
         <div class="feedback__list slider__list">
           <blockquote class="slider__item">
             <cite class="slider__autor-name">Николай Петров</cite>
-            <p class="slider__autor-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="slider__autor-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
             <span class="slider__autor-desctription">25 лет, водитель трамвая</span>
           </blockquote>
           <blockquote class="slider__item">
             <cite class="slider__autor-name">Николай Петров</cite>
-            <p class="slider__autor-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="slider__autor-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
             <span class="slider__autor-desctription">25 лет, водитель трамвая</span>
           </blockquote>
           <blockquote class="slider__item">
             <cite class="slider__autor-name">Николай Петров</cite>
-            <p class="slider__autor-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="slider__autor-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
             <span class="slider__autor-desctription">25 лет, водитель трамвая</span>
           </blockquote>
           <button class="slider__prev" type="button">Предыдущий отзыв</button>
           <button class="slider__next" type="button">Следующий отзыв</button>
         </div>
-          <p class="feedback__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
-        </div>
+        <p class="feedback__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
       </div>
     </section>
 
@@ -185,38 +192,49 @@
 
   </main>
 
-  <footer class="page-footer">
-    <h2 class="page-footer__title">Остались вопросы?
+  <section class="callback">
+    <h2 class="callback">Остались вопросы?
       Свяжитесь с нами!</h2>
-    <div class="page-footer__contacts contacts">
-      <div class="contacts__call">
-        <b class="contacts__title">Звоните:</b>
-        <a href="tel:+78125556666" class="contacts__phone">
-          <span class="contacts__phone-mobile">+7 (812) 555-66-66</span>
-        </a>
-      </div>
-      <div class="contacts__route">
-        <b class="contacts__title">Привезжайте в гости:</b>
-        <a href="#" class="contacts__adress-link">
-          <span class="contacts__adress-text">ул. Большая
-            Конюшенная, 19/8</span>
-        </a>
-      </div>
-      <div class="contacts__mail">
-        <b class="contacts__title">Пишите:</b>
-        <a href="#" class="contacts__mail-link">
-          <span class="contacts__mail-text">mail@htmlacademy.ru</span>
-        </a>
+    <div class="callback__contacts contacts">
+      <div class="contacts__wrapper">
+        <div class="contacts__call">
+          <b class="contacts__title">Звоните:</b>
+          <a href="tel:+78125556666" class="contacts__phone">
+            <span class="contacts__phone-mobile">+7 (812) 555-66-66</span>
+          </a>
+        </div>
+        <div class="contacts__mail">
+          <b class="contacts__title">Пишите:</b>
+          <a href="#" class="contacts__mail-link">
+            <span class="contacts__mail-text">mail@htmlacademy.ru</span>
+          </a>
+        </div>
+        <div class="contacts__route">
+          <b class="contacts__title">Привезжайте в гости:</b>
+          <a href="#" class="contacts__adress-link">
+            <span class="contacts__adress-text">ул. Большая
+              Конюшенная, 19/8</span>
+          </a>
+        </div>
       </div>
     </div>
-    <!-- тут вставить интерактивную карту -->
-    <div class="page-footer__map map">
+    <div class="callback__map map">
       <img src="#" alt="карта проезда" class="map__static">
     </div>
+    <!-- тут вставить интерактивную карту -->
+  </section>
 
-    <div class="page-footer__bottom">
-      <div class="page-footer__logo">
-        <img src="#" alt="Логотип" class="page-footer__logo-image">
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo logo">
+        <a class="logo__image" href="index.html">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg 1x">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg 1x">
+            <img src="img/logo-pink-white-mobile.svg" srcset="../img/logo-pink-white-mobile.svg"
+              alt="логотип приложения">
+          </picture>
+        </a>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -237,26 +255,17 @@
           </li>
         </ul>
       </div>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">
-        Разработано:
-      </b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intendive/adaptive">
-        <span class="visually-hidden">HTML Academy</span>
-        <img src="#" alt="Иконка HTML Academy">
-      </a>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">
+          Разработано:
+        </b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intendive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+          <img src="#" alt="Иконка HTML Academy">
+        </a>
+      </div>
     </div>
   </footer>
-
-
-
-
-
-
-
-
-
 
 
   <script src="js/script.js"></script>

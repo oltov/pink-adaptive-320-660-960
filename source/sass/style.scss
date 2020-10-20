@@ -1,6 +1,130 @@
+$bg-darkgrey: #1d2631;
+$bg-lightgrey: #f2f2f2;
+$tablet-width: 660px;
+$desktop-width: 960px;
+
+// scaffolding.scss
 body {
-  background-color: grey;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #283645;
+  font-style: normal;
+
+  background-color: $bg-lightgrey;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// mixins
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+// * index.html
+
+// blocks/header.scss
+.main-header__nav-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__nav-wrapper {
+    flex-direction: row;
+  }
+}
+
+.main-header__toggle {
+  display: none;
+}
+
+.main-header__list {
+  @include reset-list;
+}
+
+// blocks/store.scss
+.store__title {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .store__title {
+    display: block;
+  }
+}
+
+.store__list {
+  @include reset-list;
+}
+
+// blocks/features.scss
+.features__list {
+  display: flex;
+  flex-direction: column;
+  @include reset-list;
+}
+
+@media (min-width: $desktop-width) {
+  .features__list {
+    flex-direction: row;
+  }
+}
+
+// block/efficiency.scss
+.efficiency {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .efficiency {
+    display: block;
+  }
+}
+
+// blocks/page-footer.scss
+
+
+// blocks/contacts.scss
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+// blocks/page-footer.scss
+.page-footer__wrapper {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+// * inner-page
+
+
+
+
 
 // @import "const.scss";
 // @import "fonts.scss";
