@@ -51,9 +51,9 @@
     </div>
   </header>
 
-  <main class="page-main form-page">
-    <div class="page-main__title-wrapper">
-      <p class="page-main__title">
+  <main class="page-inner form-page">
+    <div class="form-page__title-wrapper">
+      <p class="form-page__title">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
         бонусную карту! Пожалуйста, заполните форму ниже:
         </>
@@ -119,7 +119,7 @@
       <!-- третья форма -->
       <div class="form__contacts-wrapper">
         <fieldset class="form__contacts">
-          <legend class="form__legend form__legend--contacts">Контакты</legend>
+          <legend class="form__legend form__legend--contacts">Контактная информация</legend>
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label" for="phone-field">Номер телефона</label>
@@ -161,17 +161,19 @@
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
       </div>
-      <button class="form__button button" type="submit">Отправить форму</button>
-      <p class="form-feedback__notification">
-        <span class="form__asterix">
-          *
-        </span>
-        &thinsp;—обязательные
-        <span class="form__notification-aux">
-          &thinsp;для заполнения
-        </span>
-        &thinsp;поля
-      </p>
+      <div class="form__submit-wrapper">
+        <button class="form__button button" type="submit">Отправить форму</button>
+        <p class="form__notification">
+          <span class="form__asterix">
+            *
+          </span>
+          &thinsp;—обязательные
+          <span class="form__notification-aux">
+            &thinsp;для заполнения
+          </span>
+          &thinsp;поля
+        </p>
+      </div>
     </form>
 
   </main>

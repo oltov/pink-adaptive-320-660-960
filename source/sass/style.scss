@@ -4,6 +4,12 @@ $tablet-width: 660px;
 $desktop-width: 960px;
 
 // scaffolding.scss
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   min-width: 320px;
   margin: 0;
@@ -23,7 +29,7 @@ img {
   height: auto;
 }
 
-// mixins
+// mixins.scss
 @mixin reset-list {
   margin: 0;
   padding: 0;
@@ -34,6 +40,11 @@ img {
 // * index.html
 
 // blocks/header.scss
+
+.main-header__wrapper {
+  width: 100%;
+}
+
 .main-header__nav-wrapper {
   display: flex;
   flex-direction: column;
@@ -94,7 +105,6 @@ img {
 
 // blocks/page-footer.scss
 
-
 // blocks/contacts.scss
 .contacts__wrapper {
   display: flex;
@@ -122,9 +132,97 @@ img {
 
 // * inner-page
 
+// blocks/form-page.scss
+.form-page__form {
+  margin: 0 auto;
+}
 
+// blocks/form.scss
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
 
+@media (min-width: $tablet-width) {
+  .form {
+    width: 620px;
+  }
+}
 
+@media (min-width: $desktop-width) {
+  .form {
+    width: 940px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__name-wrapper {
+    order: 0;
+  }
+
+  .form__achievement-wrapper {
+    order: 3;
+  }
+
+  .form__contacts-wrapper {
+    order: 2;
+  }
+
+  .form__apps-wrapper {
+    order: 1;
+  }
+
+  .form__emotions-wrapper {
+    order: 4;
+  }
+
+  .form__submit-wrapper {
+    order: 5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__name-wrapper {
+    width: 435px;
+    margin-right: auto;
+  }
+
+  .form__apps-wrapper {
+    width: 435px;
+    margin-left: auto;
+  }
+
+  .form__contacts-wrapper {
+    width: 940px;
+  }
+
+  .form__achievement-wrapper {
+    width: 940px;
+  }
+
+  .form__emotions-wrapper {
+    width: 940px;
+  }
+
+  .form__submit-wrapper {
+    width: 940px;
+  }
+}
+
+// blocks/inner-footer.scss
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    flex-direction: row;
+  }
+}
 
 // @import "const.scss";
 // @import "fonts.scss";
