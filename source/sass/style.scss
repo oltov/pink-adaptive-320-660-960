@@ -224,6 +224,80 @@ img {
   }
 }
 
+// blocks/gallery.scss
+
+// blocks/photo-full.scss
+.photo-full__image-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.photo-full__description-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-full__description-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .photo-full__feedback {
+    order: 2
+  }
+  
+  .photo-full__likes {
+    order: 1;
+  }
+}
+
+
+// blocks/photo-small.scss
+.photo-small__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-small__wrapper {
+    width: 620px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-small__wrapper {
+    width: 940px;
+  }
+}
+
+.photo-small__list {
+  display: flex;
+  flex-direction: column;
+  @include reset-list;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-small__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.photo-small__item {
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-small__item {
+    width: 300px;
+  }
+}
+
+
 // @import "const.scss";
 // @import "fonts.scss";
 // @import "common.scss";

@@ -59,7 +59,7 @@
         </p>
       </div>
       <div class="gallery__photo photo-full">
-        <div class="photo-full__wrapper">
+        <div class="photo-full__image-wrapper">
           <div class="photo-full__image">
             <a class="photo-full__image-link" href="#">
               <picture class="picture">
@@ -77,7 +77,7 @@
               </picture>
             </a>
           </div>
-          <div class="photo-full__description">
+          <div class="photo-full__description-wrapper">
             <p class="photo-full__user">
               <span class="photo-full__name"><b class="photo-full__date">Анна</b> (5 минут назад)</span>
             </p>
@@ -87,13 +87,273 @@
             </p>
             <div class="photo-full__likes">
               <button class="photo-full__button button button-heard" type="button">
-                Нравится: 
+                Нравится:
               </button>
               <span class="photo-full__count">215</span>
             </div>
           </div>
         </div>
       </div>
+      <div class="gallery__photo photo-small">
+        <div class="photo-small__wrapper">
+          <ul class="photo-small__list">
+            <!-- 1е фото -->
+            <li class="photo-small__item">
+              <div class="photo-small__item">
+                <a class="photo-small__link">
+                  <picture class="photo-small__picture">
+                    <source type="image/webp" media="(min-width: 960px)"
+                      srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)"
+                      srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+                    <source media="(min-width: 960px)"
+                      srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)"
+                      srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                    <img src="img/photo-car-mobile@1x.jpg"
+                      srcset="img/photo-car-mobile@1x.jpg 1x, img/photo-car-mobile@2x.jpg 2x" alt="фото автомобиль">
+                  </picture>
+                </a>
+              </div>
+              <div class="photo-small__description">
+                <p class="photo-small__user">
+                  <span class="photo-small__name"><b class="photo-small__date">Левон</b> (5 часов назад)</span>
+                </p>
+                <p class="photo-small__feedback">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+                <div class="photo-small__likes">
+                  <button class="photo-small__button button button-heard" type="button">
+                    Нравится:
+                  </button>
+                  <span class="photo-small__count">356</span>
+                </div>
+              </div>
+            </li>
+            <!-- 2е фото -->
+            <li class="photo-small__item">
+              <div class="photo-small__item">
+                <a class="photo-small__link">
+                  <picture class="photo-small__picture">
+                    <source type="image/webp" media="(min-width: 960px)"
+                      srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)"
+                      srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+                    <source media="(min-width: 960px)"
+                      srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)"
+                      srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                    <img src="img/photo-drumset-mobile@1x.jpg"
+                      srcset="img/photo-drumset-mobile@1x.jpg 1x, img/photo-drumset-mobile@2x.jpg 2x"
+                      alt="фото барабаны">
+                  </picture>
+                </a>
+              </div>
+              <div class="photo-small__description">
+                <p class="photo-small__user">
+                  <span class="photo-small__name"><b class="photo-small__date">Антон</b> (12 часов назад)</span>
+                </p>
+                <p class="photo-small__feedback">
+                  Соседи будут рады
+                </p>
+                <div class="photo-small__likes">
+                  <button class="photo-small__button button button-heard" type="button">
+                    Нравится:
+                  </button>
+                  <span class="photo-small__count">666</span>
+                </div>
+              </div>
+            </li>
+            <!-- 3е фото -->
+            <li class="photo-small__item">
+              <div class="photo-small__item">
+                <a class="photo-small__link">
+                  <picture class="photo-small__picture">
+                    <source type="image/webp" media="(min-width: 960px)"
+                      srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)"
+                      srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+                    <source media="(min-width: 960px)"
+                      srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)"
+                      srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                    <img src="img/photo-window-mobile@1x.jpg"
+                      srcset="img/photo-window-mobile@1x.jpg 1x, img/photo-window-mobile@2x.jpg 2x"
+                      alt="фото пользователя">
+                  </picture>
+                </a>
+              </div>
+              <div class="photo-small__description">
+                <p class="photo-small__user">
+                  <span class="photo-small__name"><b class="photo-small__date">Борис</b> (20 часов назад)</span>
+                </p>
+                <p class="photo-small__feedback">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+                <div class="photo-small__likes">
+                  <button class="photo-small__button button button-heard" type="button">
+                    Нравится:
+                  </button>
+                  <span class="photo-small__count">215</span>
+                </div>
+              </div>
+            </li>
+            <!-- 4е фото -->
+            <li class="photo-small__item">
+              <div class="photo-small__item">
+                <a class="photo-small__link">
+                  <picture class="photo-small__picture">
+                    <source type="image/webp" media="(min-width: 960px)"
+                      srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)"
+                      srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+                    <source media="(min-width: 960px)"
+                      srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)"
+                      srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                    <img src="img/photo-fair-mobile@1x.jpg"
+                      srcset="img/photo-fair-mobile@1x.jpg 1x, img/photo-fair-mobile@2x.jpg 2x" alt="фото пользователя">
+                  </picture>
+                </a>
+              </div>
+              <div class="photo-small__description">
+                <p class="photo-small__user">
+                  <span class="photo-small__name"><b class="photo-small__date">Сергей</b> (25 часов назад)</span>
+                </p>
+                <p class="photo-small__feedback">
+                  Самая кубанская в мире!
+                </p>
+                <div class="photo-small__likes">
+                  <button class="photo-small__button button button-heard" type="button">
+                    Нравится:
+                  </button>
+                  <span class="photo-small__count">4</span>
+                </div>
+              </div>
+            </li>
+            <!-- 4е фото -->
+            <li class="photo-small__item">
+              <div class="photo-small__item">
+                <a class="photo-small__link">
+                  <picture class="photo-small__picture">
+                    <source type="image/webp" media="(min-width: 960px)"
+                      srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)"
+                      srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+                    <source media="(min-width: 960px)"
+                      srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)"
+                      srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                    <img src="img/photo-pov-mobile@1x.jpg"
+                      srcset="img/photo-pov-mobile@1x.jpg 1x, img/photo-pov-mobile@2x.jpg 2x" alt="фото пользователя">
+                  </picture>
+                </a>
+              </div>
+              <div class="photo-small__description">
+                <p class="photo-small__user">
+                  <span class="photo-small__name"><b class="photo-small__date">Максим</b> (40 часов назад)</span>
+                </p>
+                <p class="photo-small__feedback">
+                  Где снег-то?
+                </p>
+                <div class="photo-small__likes">
+                  <button class="photo-small__button button button-heard" type="button">
+                    Нравится:
+                  </button>
+                  <span class="photo-small__count">150</span>
+                </div>
+              </div>
+            </li>
+            <!-- 5е фото -->
+            <li class="photo-small__item">
+              <div class="photo-small__item">
+                <a class="photo-small__link">
+                  <picture class="photo-small__picture">
+                    <source type="image/webp" media="(min-width: 960px)"
+                      srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)"
+                      srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+                    <source media="(min-width: 960px)"
+                      srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)"
+                      srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                    <img src="img/photo-wing-mobile@1x.jpg"
+                      srcset="img/photo-wing-mobile@1x.jpg 1x, img/photo-wing-mobile@2x.jpg 2x" alt="фото пользователя">
+                  </picture>
+                </a>
+              </div>
+              <div class="photo-small__description">
+                <p class="photo-small__user">
+                  <span class="photo-small__name"><b class="photo-small__date">Надежда</b> (45 часов назад)</span>
+                </p>
+                <p class="photo-small__feedback">
+                  Всем GM и взаимные лайки!
+                </p>
+                <div class="photo-small__likes">
+                  <button class="photo-small__button button button-heard" type="button">
+                    Нравится:
+                  </button>
+                  <span class="photo-small__count">2560</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="editor">
+      <h2 class="editor__title visually-hidden">Редактор фотографий</h2>
+      <div class="editor__wrapper">
+        <div class="editor__photo">
+          <picture class="editor__picture">
+            <source type="image/webp" media="(min-width: 960px)"
+              srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)"
+              srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+            <source media="(min-width: 960px)"
+              srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+              srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img class="editor__photo" src="img/photo-road-mobile@1x.jpg"
+              srcset="img/photo-road-mobile@1x.jpg 1x, img/photo-road-mobile@2x.jpg 2x"
+              alt="обработка фото пользователя">
+          </picture>
+          <div class="editor__wrapper-filter-button">
+            <div class="editor__filter-wrapper">
+              <div class="editor__item-wrapper">
+                <input class="editor__check editor__check-size" type="radio" id="one" checked name="editor">
+                <label for="one" class="editor__filter editor__size" tabindex="1" title="размер фото"></label>
+                <input class="editor__range editor__range-size" type="range" tabindex="1">
+              </div>
+              <div class="editor__item-wrapper">
+                <input class="editor__check editor__check-fill" type="radio" id="two" name="editor">
+                <label for="two" class="editor__filter editor__fill" tabindex="1" title="цветовой баланс"></label>
+                <input class="editor__range editor__range-fill" type="range" tabindex="1">
+              </div>
+              <div class="editor__item-wrapper">
+                <input class="editor__check editor__check-bright" type="radio" id="thre" name="editor">
+                <label for="thre" class="editor__filter editor__bright" tabindex="1" title="яркость фото"></label>
+                <input class="editor__range editor__range-bright" type="range" tabindex="1">
+              </div>
+            </div>
+            <div class="editor__button-wrapper">
+              <button class="editor__button" type="button">Запостить</button>
+              <button class="editor__button editor__button-cancel" type="button">Отмена</button>
+            </div>
+          </div>
+        </div>
     </section>
   </main>
 
